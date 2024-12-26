@@ -1,4 +1,4 @@
-import { Box} from '@mui/material'
+import { Box, Switch} from '@mui/material'
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -11,6 +11,8 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { Label } from '@mui/icons-material';
 
 
 const Sidebar = () => {
@@ -77,6 +79,14 @@ const Sidebar = () => {
                 <AccountCircleIcon/>
               </ListItemIcon>
               <ListItemText primary="Profile" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href='#profile'>
+              <ListItemIcon>
+                <DarkModeIcon/>
+              </ListItemIcon>
+              <Switch {...Label}   />
             </ListItemButton>
           </ListItem>
           </List>
