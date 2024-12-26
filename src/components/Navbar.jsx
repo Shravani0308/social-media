@@ -19,7 +19,7 @@ const StyledToolbar =styled(Toolbar)({
 const Search =styled("div")(({theme}) =>({
 backgroundColor:"white",
 padding:"0 10px",
-borderRadius:theme.shape.borderRadius,
+borderRadius:50,
 width:"40%"
 }));
 
@@ -43,9 +43,9 @@ const Navbar = () => {
   const[open, setOpen] = useState(false)
   return (
     <Box sx={{flexGrow:1}}>
-    <AppBar position='sticky' >
+    <AppBar position='fixed' >
         <StyledToolbar>
-            <Typography variant='h6' sx={{display:{xs:"none",sm:"block"}}}>navbar</Typography>
+            <Typography variant='h6' sx={{display:{xs:"none",sm:"block"}}}>SOCIAL-CONNECT</Typography>
         <Pets sx={{display:{xs:"block",sm:"none"}}}/>
        <Search>< InputBase  placeholder='search...' sx={{width:"100%"}}/></Search>
        <Icons>
